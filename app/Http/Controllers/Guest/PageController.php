@@ -24,4 +24,10 @@ class PageController extends Controller
         $contactsList = ['arum quo distinctio', 'maxime cupiditate', 'veniam iure illum perferendis', 'corporis excepturi id', 'cum repudiandae omnis', 'reiciendis aliquid'];
         return view('contacts', compact('contactsList'));
     }
+
+    public function movieDetail($id){
+        $movie = Movie::find($id);
+
+        return view('movie-detail', compact('movie'));
+    }
 }
