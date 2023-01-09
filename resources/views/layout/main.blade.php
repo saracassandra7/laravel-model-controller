@@ -9,6 +9,8 @@
     <title>Movies</title>
 </head>
 <body>
+    @include('partials.navbar')
+
     @yield('content')
 
 </body>

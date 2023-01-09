@@ -14,4 +14,14 @@ class PageController extends Controller
 
         return view('home', compact('movies'));
     }
+
+    public function about(){
+        return view('about');
+    }
+
+    public function contacts(){
+
+        $contactsList = ['arum quo distinctio', 'maxime cupiditate', 'veniam iure illum perferendis', 'corporis excepturi id', 'cum repudiandae omnis', 'reiciendis aliquid'];
+        return view('contacts', compact('contactsList'));
+    }
 }
