@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    ciao
+    {{$saluto}}
 </div>
 
 @endsection
